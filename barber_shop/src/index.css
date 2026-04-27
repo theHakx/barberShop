@@ -1,0 +1,64 @@
+:root {
+  --sb-bg: #0b0b0e;
+  --sb-surface: rgba(255, 255, 255, 0.04);
+  --sb-surface-2: rgba(255, 255, 255, 0.06);
+  --sb-border: rgba(255, 255, 255, 0.12);
+  --sb-text: rgba(255, 255, 255, 0.78);
+  --sb-text-strong: rgba(255, 255, 255, 0.96);
+  --sb-muted: rgba(255, 255, 255, 0.62);
+  --sb-gold: #d8b46a;
+  --sb-gold-2: #a67c2f;
+  --sb-shadow: 0 16px 40px rgba(0, 0, 0, 0.45);
+  --sb-shell: 1140px;
+
+  color-scheme: dark;
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  font-size: 18px;
+  line-height: 1.55;
+  letter-spacing: 0.15px;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: radial-gradient(1200px 800px at 70% 10%, rgba(216, 180, 106, 0.15), transparent 60%),
+    radial-gradient(900px 600px at 10% 70%, rgba(166, 124, 47, 0.12), transparent 55%),
+    var(--sb-bg);
+  color: var(--sb-text);
+}
+
+#root {
+  min-height: 100svh;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid rgba(216, 180, 106, 0.9);
+  outline-offset: 3px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+@media (max-width: 900px) {
+  :root {
+    font-size: 16px;
+  }
+}
