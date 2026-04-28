@@ -1,0 +1,104 @@
+.sb-section {
+  padding: 160px 0;
+  transition: background 0.6s ease, color 0.6s ease, border-color 0.6s ease;
+  background: rgba(255, 255, 255, 0.96);
+  border-top: 1px solid rgba(17, 24, 39, 0.06);
+  border-bottom: 1px solid rgba(17, 24, 39, 0.06);
+}
+
+.sb-section.sb-section-soft {
+  background: rgba(255, 255, 255, 0.92);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.7);
+}
+
+.sb-section-alt {
+  background: rgba(15, 23, 42, 0.02);
+  border-top: 1px solid rgba(15, 23, 42, 0.08);
+  border-bottom: 1px solid rgba(15, 23, 42, 0.08);
+}
+
+.sb-section.is-dark {
+  background: #0b0b0e;
+  color: rgba(255, 255, 255, 0.78);
+}
+
+.sb-section.is-dark .sb-eyebrow {
+  color: rgba(255, 255, 255, 0.62);
+  transition: color 0.6s ease;
+}
+
+.sb-section.is-dark .sb-h2 {
+  color: rgba(255, 255, 255, 0.96);
+  transition: color 0.6s ease;
+}
+
+.sb-section.is-dark .sb-muted {
+  color: rgba(255, 255, 255, 0.66);
+  transition: color 0.6s ease;
+}
+
+.sb-section-head {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin-bottom: 34px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid rgba(17, 24, 39, 0.08);
+}
+
+.sb-section-meta {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.sb-section-index {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 48px;
+  height: 48px;
+  border-radius: 16px;
+  background: rgba(183, 139, 58, 0.14);
+  color: rgba(183, 139, 58, 0.95);
+  font-family: var(--sb-serif);
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.sb-h2 {
+  margin: 0;
+  font-family: var(--sb-serif);
+  font-size: 34px;
+  letter-spacing: -0.6px;
+  color: var(--sb-text-strong);
+}
+
+.sb-muted {
+  margin: 0;
+  color: var(--sb-muted);
+}
+
+.sb-section-cta {
+  margin-top: 18px;
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 980px) {
+  .sb-section {
+    padding: 120px 0;
+  }
+}
+
+.sb-eyebrow {
+  margin: 0 0 10px;
+  font-size: 12px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: rgba(17, 24, 39, 0.56);
+}

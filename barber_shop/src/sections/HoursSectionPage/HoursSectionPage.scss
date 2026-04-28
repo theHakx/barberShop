@@ -1,0 +1,35 @@
+@import '../SectionLayoutPage.scss';
+
+.sb-split {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 22px;
+  align-items: start;
+}
+
+.sb-hours {
+  border-radius: 18px;
+  border: 1px solid rgba(17, 24, 39, 0.10);
+  background: rgba(251, 250, 247, 0.75);
+  overflow: hidden;
+}
+
+.sb-hours-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 14px;
+  border-bottom: 1px solid rgba(17, 24, 39, 0.08);
+
+  &:last-child {
+    border-bottom: 0;
+  }
+}
+
+.sb-hours-day {
+  color: rgba(17, 24, 39, 0.86);
+  font-weight: 650;
+}
+
+.sb-hours-time {
+  color: rgba(17, 24, 39, 0.62);
+}

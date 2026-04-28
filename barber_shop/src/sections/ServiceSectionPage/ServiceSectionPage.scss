@@ -1,0 +1,65 @@
+@import '../SectionLayoutPage.scss';
+
+.sb-menu {
+  margin-top: 6px;
+  border-radius: 22px;
+  border: 1px solid rgba(17, 24, 39, 0.10);
+  background: rgba(251, 250, 247, 0.92);
+  box-shadow: 0 18px 50px rgba(15, 23, 42, 0.06);
+  overflow: hidden;
+}
+
+.sb-menu-group {
+  &:not(:last-child) {
+    border-bottom: 1px solid rgba(17, 24, 39, 0.08);
+  }
+}
+
+.sb-menu-item {
+  padding: 18px 20px;
+  border-bottom: 1px solid rgba(17, 24, 39, 0.08);
+
+  &:last-child {
+    border-bottom: 0;
+  }
+}
+
+.sb-menu-top {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 14px;
+  align-items: baseline;
+}
+
+.sb-menu-name {
+  font-weight: 650;
+  font-size: 16px;
+  color: rgba(17, 24, 39, 0.94);
+}
+
+.sb-menu-leader {
+  height: 1px;
+  background-image: radial-gradient(rgba(17, 24, 39, 0.30) 1px, transparent 1px);
+  background-size: 6px 2px;
+  background-repeat: repeat-x;
+  background-position: left bottom;
+  align-self: center;
+  opacity: 0.55;
+}
+
+.sb-menu-price {
+  font-weight: 750;
+  color: rgba(183, 139, 58, 0.95);
+}
+
+.sb-menu-sub {
+  margin-top: 6px;
+  font-size: 13px;
+  color: rgba(17, 24, 39, 0.58);
+}
+
+.sb-menu-divider {
+  height: 1px;
+  background: rgba(17, 24, 39, 0.12);
+  margin: 0 20px;
+}
