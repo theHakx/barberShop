@@ -38,7 +38,7 @@ export default function Navbar({ phone, bookingUrl }) {
             {phone}
           </a>
           <a className="sb-btn sb-btn-solid" href={bookingUrl} target="_blank" rel="noreferrer">
-            Book now
+            Book Now
           </a>
         </div>
       </div>
