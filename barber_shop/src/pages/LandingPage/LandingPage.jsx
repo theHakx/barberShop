@@ -46,6 +46,8 @@ const SERVICES = [
 
 export default function LandingPage() {
   useEffect(() => {
+    window.scrollTo(0, 0)
+
     const elements = Array.from(document.querySelectorAll('[data-reveal]'))
     if (elements.length === 0) return
 

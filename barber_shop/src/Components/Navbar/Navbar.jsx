@@ -1,5 +1,4 @@
 import './Navbar.scss'
-import HamburgerButton from '../HamburgerButton/HamburgerButton'
 
 const NAV_LINKS = [
   { href: '#services', label: 'Services' },
@@ -41,7 +40,6 @@ export default function Navbar({ phone, bookingUrl }) {
           <a className="sb-btn sb-btn-solid" href={bookingUrl} target="_blank" rel="noreferrer">
             Book now
           </a>
-          <HamburgerButton phone={phone} bookingUrl={bookingUrl} />
         </div>
       </div>
     </header>

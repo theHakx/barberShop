@@ -1,19 +1,44 @@
+import { useEffect, useRef, useState } from 'react'
 import heroVideo from '../../assets/brbVideo.mp4'
+import brbVideo2 from '../../assets/brbVideo2.mp4'
+import brbVideo3 from '../../assets/brbVideo3.mp4'
 import './HeroSectionPage.scss'
 
+const HERO_VIDEOS = [heroVideo, brbVideo2, brbVideo3]
+
 export default function HeroSectionPage({ bookingUrl }) {
+  const [currentVideoIndex, setCurrentVideoIndex] = useState(0)
+  const videoRef = useRef(null)
+
+  useEffect(() => {
+    const video = videoRef.current
+    if (!video) return
+
+    video.load()
+    const playPromise = video.play()
+    if (playPromise?.catch) {
+      playPromise.catch(() => {})
+    }
+  }, [currentVideoIndex])
+
+  const handleVideoEnd = () => {
+    setCurrentVideoIndex((prevIndex) => (prevIndex + 1) % HERO_VIDEOS.length)
+  }
+
   return (
     <section className="sb-hero" aria-label="Intro">
       <div className="sb-hero-bg" aria-hidden="true">
         <video
+          ref={videoRef}
           className="sb-hero-video"
           autoPlay
           muted
-          loop
+          loop={false}
           playsInline
           preload="auto"
+          onEnded={handleVideoEnd}
         >
-          <source src={heroVideo} type="video/mp4" />
+          <source src={HERO_VIDEOS[currentVideoIndex]} type="video/mp4" />
         </video>
       </div>
 

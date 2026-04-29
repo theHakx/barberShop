@@ -1,5 +1,5 @@
 .sb-hamburger {
-  display: none;
+  display: flex; /* Temporarily visible for testing */
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -157,5 +157,11 @@
 
   .sb-header-cta {
     display: none;
+  }
+}
+
+@media (min-width: 981px) {
+  .sb-hamburger {
+    display: none !important;
   }
 }

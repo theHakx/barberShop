@@ -53,6 +53,14 @@
   grid-template-columns: 1fr;
   gap: 28px;
   align-items: start;
+  opacity: 0;
+  transform: translateY(18px);
+  transition: opacity 0.75s ease, transform 0.75s ease;
+}
+
+.sb-hero-inner.is-visible {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .sb-hero-copy {
