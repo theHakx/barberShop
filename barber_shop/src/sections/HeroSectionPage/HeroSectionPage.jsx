@@ -49,7 +49,6 @@ export default function HeroSectionPage({ bookingUrl }) {
           <p className="sb-lead">
             An elegant barbershop experience in Kilburn.
           </p>
-
           <div className="sb-hero-actions">
             <a className="sb-btn sb-btn-solid" href={bookingUrl} target="_blank" rel="noreferrer">
               Book an appointment
