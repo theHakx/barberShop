@@ -47,7 +47,7 @@ export default function HeroSectionPage({ bookingUrl }) {
           <p className="sb-kicker">North West London</p>
           <h1 className="sb-h1">Starboy Barbers</h1>
           <p className="sb-lead">
-            An elegant barbershop experience in Kilburn — clean finishes, crafted detail.
+            An elegant barbershop experience in Kilburn.
           </p>
 
           <div className="sb-hero-actions">
