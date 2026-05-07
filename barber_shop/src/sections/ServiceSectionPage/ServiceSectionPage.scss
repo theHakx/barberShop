@@ -7,6 +7,8 @@
   background: rgba(251, 250, 247, 0.92);
   box-shadow: 0 18px 50px rgba(15, 23, 42, 0.06);
   overflow: hidden;
+  max-height: 400px;
+  overflow-y: auto;
 }
 
 .sb-menu-group {
@@ -16,7 +18,7 @@
 }
 
 .sb-menu-item {
-  padding: 18px 20px;
+  padding: 12px 16px;
   border-bottom: 1px solid rgba(17, 24, 39, 0.08);
 
   &:last-child {

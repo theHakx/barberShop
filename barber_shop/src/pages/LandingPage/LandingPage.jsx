@@ -7,6 +7,7 @@ import HoursSectionPage from '../../sections/HoursSectionPage/HoursSectionPage'
 import HeroSectionPage from '../../sections/HeroSectionPage/HeroSectionPage'
 import LocationSectionPage from '../../sections/LocationSectionPage/LocationSectionPage'
 import Navbar from '../../Components/Navbar/Navbar'
+import Footer from '../../Components/Footer/Footer'
 import ServiceSectionPage from '../../sections/ServiceSectionPage/ServiceSectionPage'
 import './LandingPage.scss'
 
@@ -108,7 +109,7 @@ export default function LandingPage() {
 
   return (
     <div className="sb">
-      <Navbar phone={PHONE} bookingUrl={BOOKING_URL} />
+      <Navbar />
 
       <main id="top" className="sb-main">
         <HeroSectionPage bookingUrl={BOOKING_URL} />
@@ -125,6 +126,14 @@ export default function LandingPage() {
           bookingUrl={BOOKING_URL}
         />
       </main>
+
+      <Footer
+        address1={ADDRESS_1}
+        address2={ADDRESS_2}
+        phone={PHONE}
+        email={EMAIL}
+        bookingUrl={BOOKING_URL}
+      />
     </div>
   )
 }

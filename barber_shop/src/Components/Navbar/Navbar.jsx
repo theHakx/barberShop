@@ -9,9 +9,7 @@ const NAV_LINKS = [
   { href: '#contact', label: 'Contact' },
 ]
 
-export default function Navbar({ phone, bookingUrl }) {
-  const phoneLink = `tel:${phone.replace(/\s/g, '')}`
-
+export default function Navbar() {
   return (
     <header className="sb-header" role="banner">
       <div className="sb-shell sb-header-inner">
@@ -32,15 +30,6 @@ export default function Navbar({ phone, bookingUrl }) {
             </a>
           ))}
         </nav>
-
-        <div className="sb-header-cta">
-          <a className="sb-phone" href={phoneLink}>
-            {phone}
-          </a>
-          <a className="sb-btn sb-btn-solid" href={bookingUrl} target="_blank" rel="noreferrer">
-            Book Now
-          </a>
-        </div>
       </div>
     </header>
   )

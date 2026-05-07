@@ -1,0 +1,131 @@
+.sb-footer {
+  background: #0b0b0e;
+  color: rgba(255, 255, 255, 0.9);
+  padding: 60px 0 30px;
+  margin-top: 80px;
+}
+
+.sb-footer-content {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 60px;
+  margin-bottom: 40px;
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}
+
+.sb-footer-brand {
+  .sb-footer-logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 20px;
+
+    .sb-mark {
+      width: 40px;
+      height: 40px;
+      border-radius: 12px;
+      display: grid;
+      place-items: center;
+      font-weight: 800;
+      letter-spacing: 0.8px;
+      color: rgba(251, 250, 247, 0.98);
+      background: linear-gradient(180deg, var(--sb-accent), var(--sb-accent-2));
+      box-shadow: 0 10px 22px rgba(183, 139, 58, 0.18);
+    }
+
+    .sb-footer-title {
+      font-family: var(--sb-serif);
+      font-weight: 750;
+      font-size: 1.5rem;
+      color: white;
+    }
+  }
+
+  .sb-footer-description {
+    color: rgba(255, 255, 255, 0.7);
+    line-height: 1.6;
+    font-size: 0.95rem;
+  }
+}
+
+.sb-footer-links {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+}
+
+.sb-footer-section {
+  h3 {
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 16px;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  li {
+    margin-bottom: 8px;
+
+    a {
+      color: rgba(255, 255, 255, 0.7);
+      text-decoration: none;
+      transition: color 0.3s ease;
+
+      &:hover {
+        color: white;
+      }
+    }
+  }
+}
+
+.sb-footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 30px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+}
+
+.sb-footer-social {
+  display: flex;
+  gap: 16px;
+
+  a {
+    color: rgba(255, 255, 255, 0.7);
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: white;
+    }
+
+    svg {
+      width: 24px;
+      height: 24px;
+    }
+  }
+}
+
+.sb-footer-copyright {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.9rem;
+}

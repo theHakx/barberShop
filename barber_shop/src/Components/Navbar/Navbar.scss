@@ -71,15 +71,10 @@
   a {
     font-size: 14px;
     color: rgba(17, 24, 39, 0.82);
-    padding: 10px 14px;
-    border-radius: 999px;
-    background: rgba(255, 255, 255, 0.08);
-    border: 1px solid rgba(255, 255, 255, 0.22);
-    transition: transform 180ms ease, background 180ms ease, color 180ms ease;
+    padding: 8px 12px;
+    transition: color 180ms ease;
 
     &:hover {
-      transform: translateY(-1px);
-      background: rgba(255, 255, 255, 0.12);
       color: var(--sb-text-strong);
     }
   }

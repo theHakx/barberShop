@@ -50,7 +50,7 @@ export default function HeroSectionPage({ bookingUrl }) {
             An elegant barbershop experience in Kilburn.
           </p>
           <div className="sb-hero-actions">
-            <a className="sb-btn sb-btn-solid" href={bookingUrl} target="_blank" rel="noreferrer">
+            <a className="sb-btn sb-btn-solid sb-btn-hero-primary" href={bookingUrl} target="_blank" rel="noreferrer">
               Book an appointment
             </a>
             <a className="sb-btn sb-btn-ghost" href="#services">
@@ -58,11 +58,6 @@ export default function HeroSectionPage({ bookingUrl }) {
             </a>
           </div>
         </div>
-      </div>
-
-      <div className="sb-scroll-cue" aria-hidden="true">
-        <div className="sb-scroll-line"></div>
-        <span>Scroll</span>
       </div>
     </section>
   )
