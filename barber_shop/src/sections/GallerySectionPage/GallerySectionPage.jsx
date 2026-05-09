@@ -6,17 +6,21 @@ import haircutPic1 from '../../assets/haircutPic1.jpeg'
 import haircutPic2 from '../../assets/haircutPic2.jpeg'
 import haircutPic3 from '../../assets/haircutPic3.jpeg'
 import haircutPic4 from '../../assets/haircutPic4.jpeg'
+import vidOK1 from '../../assets/vidOK1.mp4'
+import vidOK2 from '../../assets/vidOK2.mp4'
 import './GallerySectionPage.scss'
 
 const GALLERY_IMAGES = [
-  { src: blackHairCut1, alt: 'Haircut 1' },
-  { src: blackHairCut2, alt: 'Haircut 2' },
-  { src: blackHairCut3, alt: 'Haircut 3' },
-  { src: blackHairCut4, alt: 'Haircut 4' },
-  { src: haircutPic1, alt: 'Haircut 5' },
-  { src: haircutPic2, alt: 'Haircut 6' },
-  { src: haircutPic3, alt: 'Haircut 7' },
-  { src: haircutPic4, alt: 'Haircut 8' },
+  { type: 'image', src: blackHairCut1, alt: 'Haircut 1' },
+  { type: 'image', src: blackHairCut2, alt: 'Haircut 2' },
+  { type: 'image', src: blackHairCut3, alt: 'Haircut 3' },
+  { type: 'image', src: blackHairCut4, alt: 'Haircut 4' },
+  { type: 'image', src: haircutPic1, alt: 'Haircut 5' },
+  { type: 'image', src: haircutPic2, alt: 'Haircut 6' },
+  { type: 'image', src: haircutPic3, alt: 'Haircut 7' },
+  { type: 'image', src: haircutPic4, alt: 'Haircut 8' },
+  { type: 'video', src: vidOK1, alt: 'Gallery video 1' },
+  { type: 'video', src: vidOK2, alt: 'Gallery video 2' },
 ]
 
 export default function GallerySectionPage() {
@@ -35,9 +39,22 @@ export default function GallerySectionPage() {
         </div>
 
         <div className="sb-gallery" data-reveal>
-          {GALLERY_IMAGES.map((image) => (
-            <img key={image.alt} src={image.src} alt={image.alt} />
-          ))}
+          {GALLERY_IMAGES.map((item) =>
+            item.type === 'video' ? (
+              <video
+                key={item.alt}
+                className="sb-gallery-video"
+                src={item.src}
+                autoPlay
+                muted
+                loop
+                playsInline
+              />
+            ) : (
+              <img key={item.alt} src={item.src} alt={item.alt} />
+            )
+            
+          )}
         </div>
       </div>
     </section>
