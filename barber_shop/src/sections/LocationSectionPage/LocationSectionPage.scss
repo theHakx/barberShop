@@ -1,5 +1,12 @@
 @import '../SectionLayoutPage.scss';
 
+#location.sb-section.sb-section-soft {
+  background: rgb(231, 231, 231);
+  border-top: 1px solid rgba(183, 139, 58, 0.10);
+  border-bottom: 1px solid rgba(183, 139, 58, 0.10);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.85);
+}
+
 .sb-location {
   display: grid;
   grid-template-columns: 0.75fr 1.25fr;
