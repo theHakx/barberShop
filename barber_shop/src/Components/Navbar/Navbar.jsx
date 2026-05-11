@@ -19,7 +19,7 @@ export default function Navbar() {
           </span>
           <span className="sb-brand-text">
             <span className="sb-brand-title">Starboy Barber</span>
-            <span className="sb-brand-sub">Kilburn, NW London</span>
+            {/* <span className="sb-brand-sub">Kilburn, NW London</span> */}
           </span>
         </a>
 
